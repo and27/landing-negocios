@@ -4,7 +4,7 @@ import InfoCard from "./InfoCard";
 const Hero = () => {
   return (
     <div className="relative overflow-hidden">
-      <main className="grid grid-cols-1 md:grid-cols-2 max-w-[1280px] mx-auto h-screen items-center px-5">
+      <main className="grid grid-cols-1 md:grid-cols-2 max-w-[1280px] mx-auto h-screen items-center p-5">
         <div className="flex flex-col gap-6">
           <p className="uppercase">Academia de negocios</p>
           <h1 className="text-4xl md:text-5xl font-bold">
@@ -13,7 +13,7 @@ const Hero = () => {
               Negocio Exitoso
             </span>
           </h1>
-          <p className="text-lg">
+          <p className="md:text-lg">
             Bienvenido al Taller de Emprendimiento Estratégico, donde aprenderás
             los 7 pasos clave para lanzar y hacer crecer tu propio negocio de
             manera efectiva.
