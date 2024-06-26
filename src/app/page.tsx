@@ -1,4 +1,5 @@
 import Benefits from "@/components/Benefits";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Scurve from "@/components/Scurve";
 import TestimonialSection from "@/components/TestimonialSection";
@@ -17,6 +18,7 @@ export default function Home() {
         cta="¡Quiero ser parte!"
         image="/person.jpg"
       />
+      <Footer />
     </>
   );
 }
