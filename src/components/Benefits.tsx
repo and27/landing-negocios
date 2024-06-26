@@ -7,9 +7,9 @@ interface BenefitCardProps {
 const BenefitCard = ({ title, description, icon }: BenefitCardProps) => {
   return (
     <div className="flex flex-col gap-3">
-      <p className="text-4xl mb-4 text-left">{icon}</p>
-      <h3 className="text-xl font-semibold text-left">{title}</h3>
-      <p className="text-lg text-neutral-300 text-left">{description}</p>
+      <p className="text-4xl mb-4 text-center">{icon}</p>
+      <h3 className="text-xl font-semibold text-center">{title}</h3>
+      <p className="text-lg text-neutral-300 text-center">{description}</p>
     </div>
   );
 };
@@ -24,8 +24,7 @@ const BenefitsList = [
   {
     title: "Aprende",
     icon: "🎓",
-    description:
-      "Aprende a identificar y validar oportunidades de mercado para asegurar un lanzamiento exitoso.",
+    description: "Aprende a identificar y validar oportunidades de mercado.",
   },
   {
     title: "Desarrolla",
@@ -61,8 +60,8 @@ const BenefitsList = [
 
 const Benefits = () => {
   return (
-    <section className="max-w-[1280px] mx-auto text-center py-[4rem]">
-      <h2 className="text-3xl my-[4rem]  font-extrabold">
+    <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 my-[8rem]">
+      <h2 className="text-3xl mb-[6rem] text-center font-extrabold">
         ¿Qué vas a aprender?
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
@@ -75,7 +74,7 @@ const Benefits = () => {
           />
         ))}
       </div>
-      <p className="my-[4rem] text-xl">y mucho más...</p>
+      <p className="mt-[4rem] text-xl text-center">y mucho más...</p>
     </section>
   );
 };

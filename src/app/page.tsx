@@ -1,4 +1,5 @@
 import Benefits from "@/components/Benefits";
+import Date from "@/components/Date";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Scurve from "@/components/Scurve";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <TimerBanner />
       <Hero />
+      <Date />
       <Benefits />
       <Temario />
       <TestimonialSection />
