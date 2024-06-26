@@ -2,6 +2,7 @@ import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Scurve from "@/components/Scurve";
+import Temario from "@/components/Temario";
 import TestimonialSection from "@/components/TestimonialSection";
 import TimerBanner from "@/components/TimerBanner";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <TimerBanner />
       <Hero />
       <Benefits />
+      <Temario />
       <TestimonialSection />
       <Scurve
         title="Garantía: 100% de satisfacción"
