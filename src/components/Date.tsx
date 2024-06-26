@@ -2,8 +2,7 @@ const Date = () => {
   return (
     <section
       className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:py-12 lg:px-8 flex justify-around bg-neutral-100/90 backdrop-blur-lg
-       text-neutral-900 md:-mt-[2rem] 
-    relative z-10 rounded"
+       text-neutral-900 mt-[2rem] lg:-mt-[2rem] relative z-10 rounded"
     >
       <h2 className="text-3xl font-semibold text-center sr-only">
         Detalles del curso

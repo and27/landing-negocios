@@ -115,7 +115,7 @@ const Temario = () => {
                   </div>
 
                   <dd
-                    className={`mt-2 text-base mr-10 transition-max-height duration-500 ease-in-out ${
+                    className={`mt-2 text-base md:mr-10 transition-max-height duration-500 ease-in-out ${
                       activeIndex === index
                         ? "max-h-screen"
                         : "max-h-0 overflow-hidden"

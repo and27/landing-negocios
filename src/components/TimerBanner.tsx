@@ -26,7 +26,7 @@ const TimerBanner = () => {
   }, []);
 
   return (
-    <div className="p-2 text-center bg-gradient-to-r from-yellow-400 to-red-500 text-semibold h-10 items-center flex justify-center">
+    <div className="p-3 text-center bg-gradient-to-r from-yellow-400 to-red-500 text-semibold h-10 items-center flex justify-center">
       <p className="text-black text-sm md:text-lg">
         ¡Aprovecha el descuento especial!. Quedan 11 descuentos disponibles.{" "}
       </p>
