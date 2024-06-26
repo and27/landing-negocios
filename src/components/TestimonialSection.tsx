@@ -10,7 +10,7 @@ const TestimonialSection = () => {
         Descubre cómo nuestro taller ha transformado la perspectiva de
         emprendedores como tú:
       </p>
-      <div className="flex">
+      <div className="grid grid-cols-1 md:grid-cols-3">
         <TestimonialCard
           name="John Doe"
           image="/heroImage.jpg"

@@ -50,7 +50,7 @@ const Temario = () => {
 
   return (
     <div className="bg-emerald-700 text-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-[8rem] lg:px-8">
+      <div className="max-w-7xl mx-auto py-[4rem] px-4 sm:px-6 lg:py-[8rem] lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-extrabold">

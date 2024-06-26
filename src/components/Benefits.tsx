@@ -60,7 +60,7 @@ const BenefitsList = [
 
 const Benefits = () => {
   return (
-    <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 my-[8rem]">
+    <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 my-[4rem] md:my-[8rem]">
       <h2 className="text-3xl mb-[6rem] text-center font-extrabold">
         ¿Qué vas a aprender?
       </h2>
