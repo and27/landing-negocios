@@ -12,13 +12,13 @@ const TestimonialSection = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3">
         <TestimonialCard
-          name="John Doe"
-          image="/heroImage.jpg"
+          name="Mari M."
+          image="/ma.jpg"
           description="Inspirador y práctico. El taller me dio las herramientas necesarias para comenzar mi propio negocio de manera efectiva."
         />
         <TestimonialCard
-          name="Jane Doe"
-          image="/heroImage.jpg"
+          name="David N."
+          image="/da.jpg"
           description="Aprendí más en este taller que en años de intentos por mi cuenta. Ahora veo mi negocio desde una perspectiva mucho más estratégica."
         />
         <TestimonialCard
