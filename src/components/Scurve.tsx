@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ButtomLink from "./ButtonLink";
 interface ScurveProps {
   title: string;
   description: string;
@@ -17,18 +18,25 @@ const Scurve = ({ title, description, cta, image }: ScurveProps) => {
             fill
             className="object-cover w-full h-full rounded-lg shadow-lg"
           />
+          <Image
+            src="/guarantee.png"
+            alt="Brand 5 Days"
+            width={150}
+            height={150}
+            className="rounded-lg absolute bottom-0 right-0"
+          />
         </div>
         <div className="flex flex-col gap-7">
           <h2 className="text-3xl font-bold">{title}</h2>
           <p className="text-lg">{description}</p>
-          <a
-            className="bg-red-700 text-white px-6 py-3 rounded-lg text-lg text-center font-semibold hover:bg-red-800"
+          <ButtomLink
+            className="uppercase text-center"
             href="https://wa.me/+593997019475?text=Hola%20quiero%20más%20información%20sobre%20el%20taller"
             target="_blank"
             rel="noopener noreferrer"
           >
             {cta}
-          </a>
+          </ButtomLink>
         </div>
       </div>
     </section>
