@@ -1,3 +1,4 @@
+import VideoComponent from "@/components/Video";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,21 +9,24 @@ const Brand5DaysPage: React.FC = () => {
         className="bg-emerald-800 text-neutral-100 py-20 px-3"
         style={{ background: "#000D14" }}
       >
-        <div className="fixed top-0 left-0 right-0 bg-gradient-to-r from-yellow-400 to-red-500 text-semibold text-black text-center py-3 z-50 px-2">
-          ¡Última oportunidad! El acceso gratuito al reto termina hoy.{" "}
-          <a href="#cta" className="underline font-bold">
+        <div className="fixed top-0 left-0 right-0 bg-gradient-to-r from-yellow-400 to-orange-500 text-semibold text-black text-center py-3 z-50 px-2">
+          ¡Última oportunidad! El acceso gratuito a nuestro reto termina hoy.{" "}
+          <a
+            className="underline font-bold"
+            href="https://wa.me/+593997019475?text=Hola%2C%20quiero%20unirme%20al%20reto%20de%20los%205%20d%C3%ADas"
+          >
             ¡Inscríbete ya!
           </a>
         </div>
 
-        <div className="container mx-auto mt-20 max-w-4xl flex flex-col items-center">
+        <div className="container mx-auto mt-10 md:mt-20 max-w-4xl flex flex-col items-center">
           <div className="text-center mb-6">
             <Image
               src="/logo.png"
               alt="Brand 5 Days"
-              width={60}
-              height={60}
-              className="rounded-lg"
+              width={50}
+              height={50}
+              className="rounded-lg md:w-16 md:h-16 mx-auto"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-semibold text-center mx-auto tracking-tight mb-5 md:mb-10">
@@ -44,10 +48,7 @@ const Brand5DaysPage: React.FC = () => {
               {`QUIERO UNIRME >>`}
             </Link>
           </div>
-          <video className="mt-10 w-full" controls>
-            <source src="/promobrand.mp4" type="video/mp4" />
-            Tu navegador no soporta video HTML5
-          </video>
+          <VideoComponent />
         </div>
       </section>
     </>
