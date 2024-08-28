@@ -37,7 +37,7 @@ const Brand5DaysPage: React.FC = () => {
           </p>
           <div className="flex justify-center mt-10">
             <Link
-              href="https://wa.me/5212345678901?text=Hola%2C%20quiero%20unirme%20al%20reto%20Brand%205%20Days"
+              href="https://wa.me/+593997019475?text=Hola%2C%20quiero%20unirme%20al%20reto%20de%20los%205%20d%C3%ADas"
               className="bg-green-500 text-neutral-900 font-semibold py-3 px-8 
               rounded-md text-xl hover:bg-green-600 transition-transform hover:scale-110 transform duration-300 ease-in-out"
             >
