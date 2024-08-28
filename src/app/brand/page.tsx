@@ -1,8 +1,34 @@
 import VideoComponent from "@/components/Video";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Brand5DaysPage: React.FC = () => {
+  const [videoType, setVideoType] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleWhatsAppClick = () => {
+      if (window.gtag && videoType) {
+        window.gtag("event", "click", {
+          event_category: "Conversion",
+          event_label: `WhatsApp Signup - ${videoType}`,
+          value: 1,
+        });
+      }
+    };
+
+    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
+    whatsappLinks.forEach((link) => {
+      link.addEventListener("click", handleWhatsAppClick);
+    });
+
+    return () => {
+      whatsappLinks.forEach((link) => {
+        link.removeEventListener("click", handleWhatsAppClick);
+      });
+    };
+  }, [videoType]);
+
   return (
     <>
       <section
@@ -48,7 +74,7 @@ const Brand5DaysPage: React.FC = () => {
               {`QUIERO UNIRME >>`}
             </Link>
           </div>
-          <VideoComponent />
+          <VideoComponent setVideoType={setVideoType} />
         </div>
       </section>
     </>

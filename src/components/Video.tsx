@@ -7,7 +7,11 @@ declare global {
   }
 }
 
-const VideoComponent: React.FC = () => {
+interface VideoComponentProps {
+  setVideoType: (type: string) => void;
+}
+
+const VideoComponent: React.FC<VideoComponentProps> = ({ setVideoType }) => {
   const [showLocalVideo, setShowLocalVideo] = useState<boolean>(true);
 
   useEffect(() => {
@@ -15,14 +19,17 @@ const VideoComponent: React.FC = () => {
     console.log("shouldShowLocalVideo", shouldShowLocalVideo);
     setShowLocalVideo(shouldShowLocalVideo);
 
+    const videoType = shouldShowLocalVideo ? "Local Video" : "YouTube Video";
+    setVideoType(videoType);
+
     if (window.gtag) {
       window.gtag("event", "ab_testing", {
         event_category: "A/B Testing",
-        event_label: shouldShowLocalVideo ? "Local Video" : "YouTube Video",
+        event_label: videoType,
         value: shouldShowLocalVideo ? 1 : 0,
       });
     }
-  }, []);
+  }, [setVideoType]);
 
   const trackVideoEvent = (action: string, label: string) => {
     if (window.gtag) {
